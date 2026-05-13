@@ -1,6 +1,7 @@
-## Traffic Light Project
 
-<img width="856" height="887" alt="Screenshot 2025-08-27 235238" src="https://github.com/user-attachments/assets/7d6ffe76-cc0b-4ac8-9112-0bf76ece8919" />
+## Traffic Light Project
+<img width="414" height="659" alt="Screenshot 2026-05-13 at 4 54 10 PM" src="https://github.com/user-attachments/assets/471c8259-e387-4ebf-adb9-ea467ea45efb" />
+
 
 
 This project demonstrates a simple **Traffic Light** built using only **HTML and CSS**.  
