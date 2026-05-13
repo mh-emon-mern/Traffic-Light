@@ -1,45 +1,84 @@
-*{
-    margin-top: 20px;
-    margin-left: 50px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
-#traffic_light{
-    background-color: black;
-    height: 500px;
-    width: 200px;
-    border-radius: 25px;
-    margin-left: 180px;
-    padding-top: 20px;
-    padding-left: 40px;
 
+/* পুরো page center করা */
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
 }
-.red{
-    height: 100px;
-    width: 100px;
-    background-color: red;
-    border-radius: 50%;
-    margin: 20px;
-    
+
+/* traffic light box */
+#traffic_light {
+  background: #111;
+  width: 140px;
+  padding: 20px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
-.yellow{
-    height: 100px;
-    width: 100px;
-    background-color: yellow;
-    border-radius: 50%;
-    margin: 20px;
+
+/* lights */
+.light {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  opacity: 0.3;
+  transition: 0.3s;
 }
-.green{
-    height: 100px;
-    width: 100px;
-    background-color: green;
-    border-radius: 50%;
-    margin: 20px;
+
+/* colors */
+.red {
+  background: red;
 }
-h2{
-    font-size: 60px;
-    
-    font-style: normal;
-    background-color: #011b1c;
-    color: #ffffff;
-    display: inline-block;
-    border-radius: 25px;
+.yellow {
+  background: yellow;
+}
+.green {
+  background: green;
+}
+
+/* hover effect (modern touch) */
+.light:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* title */
+h2 {
+  margin-top: 25px;
+  color: white;
+  font-size: 28px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+}
+
+/* responsive */
+@media (max-width: 480px) {
+  #traffic_light {
+    width: 120px;
+    padding: 15px;
+  }
+
+  .light {
+    width: 70px;
+    height: 70px;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
 }
